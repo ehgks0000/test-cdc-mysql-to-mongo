@@ -1,0 +1,13 @@
+{
+  "name": "mongodb-sink-connector",
+  "config": {
+    "connector.class": "com.mongodb.kafka.connect.MongoSinkConnector",
+    "tasks.max": "1",
+    "topics": "dbserver1.test.user",
+    "connection.uri": "mongodb://root:password@mongodb:27017",
+    "database": "test",
+    "collection": "user",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter"
+  }
+}
