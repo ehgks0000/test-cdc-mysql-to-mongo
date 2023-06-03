@@ -10,7 +10,7 @@
     "database.server.id": "184054",
     "database.server.name": "dbserver1",
     "database.whitelist": "test",
-    "table.whitelist": "test.user",
+    "table.whitelist": "test.user,test.post",
     "database.history.kafka.bootstrap.servers": "kafka:9092",
     "database.history.kafka.topic": "dbhistory.inventory",
     "include.schema.changes": "true",
