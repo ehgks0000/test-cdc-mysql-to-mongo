@@ -8,6 +8,9 @@
     "database": "test",
     "collection": "user",
     "key.converter": "org.apache.kafka.connect.storage.StringConverter",
-    "value.converter": "org.apache.kafka.connect.json.JsonConverter"
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "document.id.strategy": "com.mongodb.kafka.connect.sink.processor.id.strategy.PartialValueStrategy",
+    "document.id.strategy.partial.value.projection.type": "ALLOWLIST",
+    "document.id.strategy.partial.value.projection.list": "after.id"
   }
 }
